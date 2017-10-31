@@ -1,13 +1,33 @@
 {
   "name": "w44",
   "version": "0.0.0",
-  "description": "Hello Expo!",
-  "author": null,
+  "description": "Proud!",
+  "author": "Wijnand",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
+  "eslintConfig": {
+    "extends": "expo/native"
+  },
+  "scripts": {
+    "dev": "REACT_DEBUGGER='rndebugger-open --open --expo --dev' exp start --host lan --protocol exp --dev ./"
+  },
   "dependencies": {
+    "apollo-client": "1.x",
     "expo": "^22.0.0",
+    "flow": "^0.2.3",
+    "graphql": "^0.11.7",
     "react": "16.0.0-beta.5",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz"
+    "react-apollo": "1.x",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz",
+    "react-navigation": "^1.0.0-beta.16",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-expo": "^6.0.0",
+    "flow-bin": "^0.57.3",
+    "prettier": "^1.7.4"
   }
 }
